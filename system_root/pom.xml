@@ -93,11 +93,7 @@
             <artifactId>spring-core</artifactId>
             <version>${org.springframework-version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${org.springframework-version}</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -145,6 +141,12 @@
             <artifactId>spring-instrument-tomcat</artifactId>
             <version>${org.springframework-version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+
         <!--springmvc 转 Json -->
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
