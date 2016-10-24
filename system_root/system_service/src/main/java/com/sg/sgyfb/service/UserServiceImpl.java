@@ -10,6 +10,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sg.sgyfb.bean.User;
@@ -26,7 +27,10 @@ import com.sg.sgyfb.dao.UserMapper;
 @Service
 public class UserServiceImpl implements UserService {
 
-	@Resource
+	/**
+	 *
+	 */
+	@Autowired
 	private UserMapper userMapper;
 	/* 
 	 * @see com.sg.sgyfb.core.service.UserService#countByExample(com.sg.sgyfb.core.bean.UserExample)

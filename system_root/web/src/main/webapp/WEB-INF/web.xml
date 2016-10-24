@@ -38,12 +38,9 @@
 
   <filter-mapping>
     <filter-name>encoding</filter-name>
-    <url-pattern>*.do</url-pattern>
+    <url-pattern>/</url-pattern>
   </filter-mapping>
-  <filter-mapping>
-    <filter-name>encoding</filter-name>
-    <url-pattern>*.shtml</url-pattern>
-  </filter-mapping>
+    <!-- END中文过滤器 -->
 
   <!-- Oscached Filter -->
   <!-- <filter>
@@ -78,6 +75,7 @@
     <servlet-name>front</servlet-name>
     <url-pattern>*.shtml</url-pattern>
   </servlet-mapping>
+    <!-- END配置SpringMVC 前台 -->
 
   <!-- 配置SpringMVC 后台 -->
   <servlet>
@@ -92,6 +90,7 @@
     <servlet-name>back</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
+    <!-- END配置SpringMVC 后台 -->
 
   <!-- Jcaptcha 验证码 -->
   <!--<servlet>
@@ -102,6 +101,7 @@
     <servlet-name>captcha</servlet-name>
     <url-pattern>/captcha.svl</url-pattern>
   </servlet-mapping>-->
+
   <!-- 配置  Shiro 的 Filter -->
   <!--<filter>
     <filter-name>shiroFilter</filter-name>
